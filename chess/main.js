@@ -1,5 +1,6 @@
 'use strict'
 
+console.log('test');
 let table = document.querySelector('table');
 let whiteMoves = {};
 let blackMoves = {};
