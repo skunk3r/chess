@@ -1,0 +1,141 @@
+body {
+	min-height: 800px;
+	margin: 0;
+	background: linear-gradient(to bottom, #D486D3, lightblue);
+}
+
+main {
+	padding-top: 35px;
+	overflow: hidden;
+}
+
+table {
+	min-width: 352px;
+	/*width: 728px;*/
+	min-height: 352px;
+	/*height: 728px;*/
+	border-collapse: collapse;
+	box-sizing: border-box;
+	border-spacing: 0;
+	margin: 15px auto 10px auto;
+	font-size: 1.3em;
+	font-family: 'consolas', sans-serif;
+	font-weight: bold;
+	box-shadow: 0 0 10px 2px black;
+}
+
+td {
+	width: 12.5%;
+	height: 12.5%;
+	padding: 0;
+	margin: 0;
+	vertical-align: bottom;
+	position: relative;
+	overflow: hidden;
+}
+
+.black-square {
+	background-color: #53884A;
+}
+
+.white-square {
+	background-color: #DFDFB5;
+}
+
+.black-square > span {
+	color: #DFDFB5;
+} 
+
+.white-square > span {
+	color: #53884A;
+} 
+
+span {
+	opacity: 0.95;
+	line-height: 0.9;
+	position: absolute;
+	cursor: default;
+}
+
+span.number {
+	margin: 3px 0 0 3px;
+	left: 0;
+	top: 0;
+}
+
+span.letter {
+	margin: 0 3px 3px 0;
+	right: 0;
+	bottom: 0;
+}
+
+.eaten-white-pieces, .eaten-black-pieces {
+	width: 375px;
+	height: 30px;
+	padding: 0;
+	list-style: none;
+	margin: 0 auto;
+}
+
+.eaten-white-pieces > li, .eaten-black-pieces > li {
+	display: table-cell;
+	width: 25px;
+	height: 30px;
+	vertical-align: bottom;
+}
+
+.highlighted {
+	background-color: #b6c6e2;
+}
+
+.available {
+	position: absolute;
+	top: 35%;
+	left: 35%;
+	width: 30%;
+	height: 30%;
+	border-radius: 100%;
+	background-color: #b6c6e2;
+	margin: 0 auto;
+}
+
+.mouseover .available {
+	background-color: red;
+}
+
+.mouseover  {
+	box-shadow: inset 0 0 0 4px #b6c6e2;
+}
+
+.pieces {
+	display: block;
+	margin: 0 auto;
+}
+
+.buttons {
+	position: absolute;
+	width: 50px;
+}
+
+.button {
+	width: 50%;
+}
+
+.rook {
+	width: 71.4286%
+}
+.knight {
+	width: 85.7143%;
+}
+.bishop {
+	width: 92.3077%;
+}
+.queen {
+	width: 99%;
+}
+.king {
+	width: 86.8132%;
+}
+.pawn {
+	width: 61.5385%;
+}
