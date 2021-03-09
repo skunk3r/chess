@@ -1543,26 +1543,22 @@ function checkmate() {
 					}
 				}
 
-				let td2 = table.rows[row - 1].cells[cellIndex];
-
-				if (piece.classList.contains('white') && rowIndex === 6 && !td2.querySelector('.pieces')) {
+				if (piece.classList.contains('white') && rowIndex === 6 && !table.rows[row - 1].cells[cellIndex].querySelector('.pieces')) {
 
 					if ((checkLine && checkLine.includes(td)) || !checkLine) {
 
 						if (!potentialCheck.includes(piece.closest('td')) || potentialCheck.includes(td)) {
-							localMoves.push(td2);
+							localMoves.push(table.rows[row - 1].cells[cellIndex]);
 						}
 					}
 				}
 
-				td2 = table.rows[row + 1].cells[cellIndex];
-
-				if (piece.classList.contains('black') && rowIndex === 1 && !td2.querySelector('.pieces')) {
+				if (piece.classList.contains('black') && rowIndex === 1 && !table.rows[row + 1].cells[cellIndex].querySelector('.pieces')) {
 
 					if ((checkLine && checkLine.includes(td)) || !checkLine) {
 
 						if (!potentialCheck.includes(piece.closest('td')) || potentialCheck.includes(td)) {
-							localMoves.push(td2);
+							localMoves.push(table.rows[row + 1].cells[cellIndex]);
 						}
 					}
 				}
