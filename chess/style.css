@@ -1,11 +1,11 @@
 body {
-	min-height: 800px;
+	min-height: 477px;
 	margin: 0;
 	background: linear-gradient(to bottom, #D486D3, lightblue);
 }
 
 main {
-	padding-top: 35px;
+	padding: 20px 0;
 	overflow: hidden;
 }
 
