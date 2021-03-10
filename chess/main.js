@@ -92,6 +92,8 @@ let kf = 0.9;
 let width = document.documentElement.clientWidth * kf - buttons.offsetWidth - 30;
 let height = document.documentElement.clientHeight * kf - buttons.offsetWidth - 30;
 
+document.body.style.height = document.documentElement.clientHeight + 'px';
+
 if (document.documentElement.clientHeight * kf + buttons.offsetWidth > document.documentElement.clientWidth) {
 		table.style.width = width + 'px';
 		table.style.height = width + 'px';
@@ -109,6 +111,8 @@ buttons.style.left = table.offsetWidth + table.offsetLeft + 10 + 'px';
 buttons.style.top = table.offsetHeight/2 + table.offsetTop - buttons.offsetHeight/2 + 'px';
 
 window.addEventListener('resize', () => {
+	document.body.style.height = document.documentElement.clientHeight + 'px';
+	
 	width = document.documentElement.clientWidth * kf - buttons.offsetWidth - 30;
 	height = document.documentElement.clientHeight * kf - buttons.offsetWidth - 30;
 
